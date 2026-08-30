@@ -89,7 +89,7 @@ const Navbar = () => {
                     }
 
                     <Button onClick={() => setIsMobileMenuOpen(false)}>
-                        Contact Me
+                        <a href="#contact">Contact Me</a>
                     </Button>
                 </div>
             </div>)
