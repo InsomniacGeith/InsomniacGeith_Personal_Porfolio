@@ -36,7 +36,7 @@ const projects = [
     {
         title: "Car Rental Platform",
         description: "The main goal of this project was to develop a mobile application that facilitates vehicle booking for customers and allows vehicle owners to monetize their assets. The application offers real-time vehicle monitoring and integrates secure mobile payments.",
-        image: "/projects/cart_central.png",
+        image: "/projects/cart_central.png" ,
         tags: ["Flutter", "Laravel", "SQL", "Laragon", "Laragon CMD"],
         link: "#",
         
@@ -102,7 +102,7 @@ const Projects = () => {
                             {/* Image */}
                             <div className="relative overflow-hidden aspect-video">
                                 <img
-                                    src={project.image}
+                                    src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />

@@ -56,15 +56,7 @@ const Hero = () => {
 
         {/* Start BackgroundImage */}
 
-        <div className="absolute inset-0">
-            <img src="/hero_image.jpg"
-                alt="Hero image"
-                className="w-full h-full object-cover opacity-40"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background">
-
-            </div>
-        </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background pointer-events-none" />
         {/* End BackgroundImage */}
 
         {/* Start Green Dots */}
@@ -157,7 +149,7 @@ const Hero = () => {
                        to-primary/10 blur-2xl animate-pulse
                        "/>
                         <div className="relative glass rounded-2xl p-2 glow-border">
-                            <img src="/profil_photo.jpg"
+                            <img src={`${import.meta.env.BASE_URL}profil_photo.jpg`}
                                 alt="Eudes Paulin"
                                 className="w-full aspect-auto object-cover rounded-2xl"
                             />

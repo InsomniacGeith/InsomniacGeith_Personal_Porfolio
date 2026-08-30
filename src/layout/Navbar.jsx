@@ -38,7 +38,7 @@ const Navbar = () => {
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#" className="flex items-center">
                     <img
-                        src="/INSGT.jpg"
+                        src={`${import.meta.env.BASE_URL}INSGT.jpg`}
                         alt="Logo"
                         className="h-18 w-auto rounded-full object-contain hover:opacity-80 transition-opacity"
                     />
